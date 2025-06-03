@@ -93,7 +93,7 @@ with right_column:
     # OS
     os = st.selectbox('OS',df['Simplified_OS'].unique())
 
-if st.button("Pridict Price"):
+if st.button("Predict Price"):
     ppi = None
     if touchscreen=="Yes":
         touchscreen=1

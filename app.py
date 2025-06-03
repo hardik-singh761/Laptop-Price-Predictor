@@ -6,7 +6,7 @@ import numpy as np
 st.set_page_config(page_title="Laptop Price Predictor", page_icon="💻",layout="wide")
 
 #import model
-st.title("Laptop Price Predictor 💻")
+st.title("Laptop Price Predictor 💻 by Hardik")
 pipe=pickle.load(open("./model/pipe.pkl","rb"))
 df=pickle.load(open("./model/df.pkl","rb"))
 

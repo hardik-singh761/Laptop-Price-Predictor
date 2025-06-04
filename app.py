@@ -116,6 +116,9 @@ if st.button("Predict Price"):
     query=np.array([company,type,ram,weight,screen,touchscreen,ips,rd,cpu_freq,Primary_storage,Secondary_storage,pst,sst,gpu_company,ppi,cpu,os])
 
     query=query.reshape(1, 17)
-    st.title("The Predicted Price of Laptop = Rs "+str(int(np.exp(pipe.predict(query)[0]))))
+    if weight==0.0:
+        st.title('None')
+    else:
+        st.title("The Predicted Price of Laptop = Rs "+str(int(np.exp(pipe.predict(query)[0]))))
 
 
